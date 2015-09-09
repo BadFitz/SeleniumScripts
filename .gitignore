@@ -1,6 +1,7 @@
 # vim files
 *~
 *.swp
+.ropeproject
 
 # Windows image file caches
 Thumbs.db
