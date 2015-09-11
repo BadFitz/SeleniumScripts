@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
-# from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-# from selenium.webdriver.common.by import By
+# from selenium.webdriver.common.action_chains import ActionChains
 # from selenium.webdriver.common.keys import Keys
 # from selenium.webdriver.support.ui import Select
 # from selenium.common.exceptions import NoSuchElementException
@@ -19,6 +18,10 @@ driver.get(base_url)
 driver.find_element_by_xpath("//div[2]/div/div/input").send_keys("df27533")
 driver.find_element_by_xpath("//div/div[2]/input").send_keys("dave4@4AHTD")
 driver.find_element_by_xpath("//div[2]/div/input").click()
+
+a = "test"
+print ("|").join(a.split(r"."))
+
 
 # open "Manage Inventory" page and click "All Assets" "+" button
 driver.get(base_url + "/manageassets.aspx")
